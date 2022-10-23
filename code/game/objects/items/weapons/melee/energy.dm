@@ -115,6 +115,19 @@
 	icon_state = initial(icon_state)
 	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just a regular knife now.</span>")
 
+/obj/item/melee/energy/tasergoad
+	name = "taser goad"
+	desc = "A baton of crackling arc energy"
+	icon_state = "tasergoad0"
+	active_force = 22
+	force = 22
+	sharp = 0
+	edge = 0
+	w_class = ITEM_SIZE_NORMAL
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	attack_verb = list("attacked", "beat", "slammed", "shocked",)
+
 /*
  * Energy Sword
  */

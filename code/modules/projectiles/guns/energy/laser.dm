@@ -150,7 +150,7 @@ obj/item/gun/energy/retro
 	recharge_time = 10
 	accuracy = 0 //mounted laser cannons don't need any help, thanks
 	one_hand_penalty = 0
-//ALSO NOT READY 
+//ALSO NOT READY
 /obj/item/gun/energy/plasmacannon
 	name = "Plasma cannon"
 	desc = "A very rare plasma rifle, used by the finest people in the galaxy. It has a label on the backside which states (DANGER! Highly unstable liquid)."
@@ -558,6 +558,27 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		list(mode_name="execution", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
+		)
+
+/obj/item/gun/energy/las/arcrifle
+	name = "arc rifle"
+	desc = "A weapon of the skitarii legions, able to let loose frying blasts of energy"
+	icon_state = "arcrifle"
+	item_state = "arcrifle"
+	charge_meter = FALSE
+	one_hand_penalty = 1.8
+	w_class = ITEM_SIZE_LARGE
+	accuracy = 1
+	fire_delay = 2
+	armor_penetration = 12.5
+	cell_type = /obj/item/cell/lasgun/hotshot
+	ammoType = /obj/item/cell/lasgun/hotshot
+	recharge_time = 20
+	projectile_type = /obj/item/projectile/beam/stun/shock/heavy
+	wielded_icon = "arcrifle-wielded"
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=10, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
 		)
 
 
