@@ -121,10 +121,6 @@
 	required_reagents = list(atepoine = 1, synaptizine = 1, hyperzine = 1)
 	result_amount = 10
 
-
-
-
-
 /datum/chemical_reaction/tramadol
 	name = "Tramadol"
 	result = /datum/reagent/tramadol

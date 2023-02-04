@@ -1,5 +1,10 @@
 // Dumbass's code. For first time.
 
+/*Code possibly from a russian server running /vg code back in 2015 under the name yellowrecruit/Polar station 13,
+None of it works its just a resprited singulo when you get down to it. We could remove it but it feels like a glipse into history,
+perhaps someone gets inspired by it. Leaving it here for now but commented out.
+If you've found this congrats consider it a coder easter egg -Clarke 1/30/2023
+
 /obj/machinery/sunreactor
 	name = "Atomic Reactor"
 	desc = "Part of a 'Sun Reactor'."
@@ -663,3 +668,6 @@
 		if(get_dist(R, src) <= 15) // Better than using orange() every process
 			R.receive_pulse(energy)
 	return
+
+
+*/

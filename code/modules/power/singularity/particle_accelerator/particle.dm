@@ -42,7 +42,7 @@
 			var/mob/M = A
 			M.gib()
 
-		if((istype(A,/obj/machinery/the_singularitygen))||(istype(A,/obj/machinery/sunreactor/center))||(istype(A,/obj/machinery/sunreactor/rleft))||(istype(A,/obj/machinery/sunreactor/rright))||(istype(A,/obj/machinery/sunreactor/rup))||(istype(A,/obj/machinery/sunreactor/rdown)))
+		if((istype(A,/obj/machinery/the_singularitygen)))/*||(istype(A,/obj/machinery/sunreactor/center))||(istype(A,/obj/machinery/sunreactor/rleft))||(istype(A,/obj/machinery/sunreactor/rright))||(istype(A,/obj/machinery/sunreactor/rup))||(istype(A,/obj/machinery/sunreactor/rdown)))*/
 			var/turf/Under
 			Under = get_turf(A)
 			A:energy += energy*(Under.temperature/280)
